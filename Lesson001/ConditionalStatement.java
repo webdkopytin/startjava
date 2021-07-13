@@ -30,6 +30,5 @@ public class ConditionalStatement {
         } else {
             System.out.println("Не удалось определить первую букву имени");
         }
-
     }
 }
