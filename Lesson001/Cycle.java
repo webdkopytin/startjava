@@ -4,20 +4,20 @@ public class Cycle {
             System.out.println(i + " ");
         }
 
-        int result = 6;
-        while (result >= -6) {
-            System.out.println(result + " ");
-            result = result - 2;
+        int counter = 6;
+        while (counter >= -6) {
+            System.out.println(counter + " ");
+            counter -= 2;
         }
 
-        int sumResult = 0;
-        int oddNumbers = 10;
+        int sumOdd = 0;
+        int counterNumbers = 10;
         do {
-            if (oddNumbers % 2 == 1) {
-                sumResult += oddNumbers;
+            if (counterNumbers % 2 == 1) {
+                sumOdd += counterNumbers;
             }
-            oddNumbers++;
-        } while (oddNumbers <= 20);
-        System.out.println("Сумма нечетных чисел от [10, 20] = " + sumResult);
+            counterNumbers++;
+        } while (counterNumbers <= 20);
+        System.out.println("Сумма нечетных чисел от [10, 20] = " + sumOdd);
     }
 }
