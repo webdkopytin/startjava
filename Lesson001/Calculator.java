@@ -3,23 +3,24 @@ public class Calculator {
         char operation = '^';
         int firstNumber = 5;
         int secondNumber = 5;
-        int result = 1;
 
         if (operation == '+') {
-            result = firstNumber + secondNumber;
+            System.out.println(firstNumber + " " + operation + " " + secondNumber + " = " + (firstNumber + secondNumber));
         } else if (operation == '-') {
-            result = firstNumber - secondNumber;
+            System.out.println(firstNumber + " " + operation + " " + secondNumber + " = " + (firstNumber - secondNumber));
         } else if (operation == '*') {
-            result = firstNumber * secondNumber;
+            System.out.println(firstNumber + " " + operation + " " + secondNumber + " = " + (firstNumber * secondNumber));
         } else if (operation == '/') {
-            result = firstNumber / secondNumber;
+            System.out.println(firstNumber + " " + operation + " " + secondNumber + " = " + (firstNumber / secondNumber));
         } else if (operation == '^') {
+            int result = 1;
             for (int i = 1; i <= secondNumber; i++) {
                 result *= firstNumber;
             }
+            System.out.println(firstNumber + " " + operation + " " + secondNumber + " = " + result);
         } else if (operation == '%') {
-            result = firstNumber % secondNumber;
+            System.out.println(firstNumber + " " + operation + " " + secondNumber + " = " + (firstNumber % secondNumber));
         }
-        System.out.println(firstNumber + " " + operation + " " + secondNumber + " = " + result);
+        
     }
 }
