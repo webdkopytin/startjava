@@ -23,6 +23,6 @@ public class Person {
     }
 
     void teachJava() {
-        System.out.println("Пройдена очередная глава Java");ß
+        System.out.println("Пройдена очередная глава Java");
     }
 }
