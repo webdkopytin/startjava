@@ -6,8 +6,7 @@ public class WolfTest {
         wolf.weight = 5.3f;
         wolf.color = "Black";
 
-        System.out.println(
-                "Характеристики волка: " + System.lineSeparator() +
+        System.out.println("Характеристики волка: " + System.lineSeparator() +
                 "\tПол: " + wolf.gender + System.lineSeparator() +
                 "\tНикнейм: " + wolf.nickname + System.lineSeparator() +
                 "\tВес: " + wolf.weight + " кг." + System.lineSeparator() +
