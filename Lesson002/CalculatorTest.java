@@ -10,13 +10,13 @@ public class CalculatorTest {
 
         while(question.equals("yes")) {
             System.out.print("Введите первое число: ");
-            calculator.setFirstInt(scanner.nextInt());
+            calculator.setFirstNumber(scanner.nextInt());
 
             System.out.print("Введите знак математической операции: ");
             calculator.setOperation(scanner.next().charAt(0));
 
             System.out.print("Введите второе число: ");
-            calculator.setSecondInt(scanner.nextInt());
+            calculator.setSecondNumber(scanner.nextInt());
 
             calculator.calc();
 

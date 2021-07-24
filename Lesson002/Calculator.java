@@ -3,11 +3,11 @@ public class Calculator {
     private char operation;
     private int secondNumber;
 
-    public void setFirstInt(int firstNumber) {
+    public void setFirstNumber(int firstNumber) {
         this.firstNumber = firstNumber;
     }
 
-    public void setSecondInt(int secondNumber) {
+    public void setSecondNumber(int secondNumber) {
         this.secondNumber = secondNumber;
     }
 
