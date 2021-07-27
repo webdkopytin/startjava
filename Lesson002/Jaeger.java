@@ -7,52 +7,37 @@ public class Jaeger {
     private float weight;
     private int armour;
 
-    public String getModelName() {
-        return modelName;
+    public Jaeger (String modelName, String mark, String origin, float height, float weight, int armour) {
+        this.modelName = modelName;
+        this.mark = mark;
+        this.origin = origin;
+        this.height = height;
+        this.weight = weight;
+        this.armour = armour;
     }
 
-    public void setModelName(String modelName) {
-        this.modelName = modelName;
+    public String getModelName() {
+        return modelName;
     }
 
     public String getMark() {
         return mark;
     }
 
-    public void setMark(String mark) {
-        this.mark = mark;
-    }
-
     public String getOrigin() {
         return origin;
-    }
-
-    public void setOrigin(String origin) {
-        this.origin = origin;
     }
 
     public float getHeight() {
         return height;
     }
 
-    public void setHeight(float height) {
-        this.height = height;
-    }
-
     public float getWeight() {
         return weight;
     }
 
-    public void setWeight(float weight) {
-        this.weight = weight;
-    }
-
     public int getArmour() {
         return armour;
-    }
-
-    public void setArmour(int armour) {
-        this.armour = armour;
     }
 
     boolean drift() {
