@@ -7,7 +7,7 @@ public class Jaeger {
     private float weight;
     private int armour;
 
-    public Jaeger (String modelName, String mark, String origin, float height, float weight, int armour) {
+    public Jaeger(String modelName, String mark, String origin, float height, float weight, int armour) {
         this.modelName = modelName;
         this.mark = mark;
         this.origin = origin;
@@ -59,11 +59,11 @@ public class Jaeger {
 
     public String toString() {
         return "Информация о модели: " + System.lineSeparator() +
-            "\tmodelName = " + modelName + System.lineSeparator() +
-            "\tmark = " + mark + System.lineSeparator() +
-            "\torigin = " + origin + System.lineSeparator() +
-            "\theight = " + height + System.lineSeparator() +
-            "\tweight = " + weight + System.lineSeparator() +
-            "\tarmour = " + armour;
+                "\tmodelName = " + modelName + System.lineSeparator() +
+                "\tmark = " + mark + System.lineSeparator() +
+                "\torigin = " + origin + System.lineSeparator() +
+                "\theight = " + height + System.lineSeparator() +
+                "\tweight = " + weight + System.lineSeparator() +
+                "\tarmour = " + armour;
     }
 }
