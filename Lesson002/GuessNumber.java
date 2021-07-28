@@ -15,8 +15,7 @@ public class GuessNumber {
     public void startGame() {
         isWin = false;
         compNumber = (int) (Math.random() * 100);
-        System.out.println("\nКомпьютер загадал число: " 
-        + compNumber);  
+        System.out.println("\nКомпьютер загадал число: " + compNumber);
         do {
             inputUserNumber(playerOne);
             guessingNumber(playerOne);
