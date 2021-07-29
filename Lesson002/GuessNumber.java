@@ -27,12 +27,12 @@ public class GuessNumber {
         } while (!isWin);
     } 
 
-    public void inputNumber(Player player) {
+    private void inputNumber(Player player) {
         System.out.print(player.getName() + ", введите число: ");
         player.setNumber(scan.nextInt());
     }
 
-    public void compareNumbers(Player player) {
+    private void compareNumbers(Player player) {
         if (player.getNumber() == hiddenNumber) {
             System.out.println(player.getName() + ", Вы угадали, это число: " + player.getNumber());
             isWin = true;
