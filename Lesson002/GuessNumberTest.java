@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class GuessNumberTest {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         
         System.out.print("Первый игрок, введите свое имя: ");
@@ -14,13 +14,12 @@ public class GuessNumberTest {
         
         String response = "yes";
         do {
-            game.startGame();
+            game.start();
 
             do {
                 System.out.print("Хотите продолжить? [yes/no]: ");
                 response = scan.next();
-            } while ((!response.equals("yes")) && (!response.equals("no")));
-
+            } while (!response.equals("yes") && !response.equals("no"));
         } while(response.equals("yes"));
         System.out.println("Удачи!");
     }
