@@ -20,7 +20,8 @@ public class GuessNumber {
             if (!isWin) {
                 inputNumber(playerOne);
                 compareNumbers(playerOne);
-            } else if (!isWin) {
+            } 
+            if (!isWin) {
                 inputNumber(playerTwo);
                 compareNumbers(playerTwo);
             }
