@@ -9,27 +9,27 @@ public class Calculator {
         this.firstNumber = firstNumber;
     }
 
-    public void setSecondNumber(int secondNumber) {
-        this.secondNumber = secondNumber;
-    }
-
     public void setOperation(char operation) {
         this.operation = operation;
+    }
+
+    public void setSecondNumber(int secondNumber) {
+        this.secondNumber = secondNumber;
     }
 
     public void calc() {
         int result;
         switch(operation) {
             case '+' :
-                result = firstNumber + secondNumber;
+                result = Math.addExact(firstNumber, secondNumber);
                 System.out.println("Сумма равна: " + result);
                 break;
             case '-' :
-                result = firstNumber - secondNumber;
+                result = Math.subtractExact(firstNumber, secondNumber);
                 System.out.println("Разность равна: " + result);
                 break;
             case '*' :
-                result = firstNumber * secondNumber;
+                result = Math.multiplyExact(firstNumber, secondNumber);
                 System.out.println("Произведение равно: " + result);
                 break;
             case '/' :
@@ -41,10 +41,7 @@ public class Calculator {
                 System.out.println("Остаток от деления: " + result);
                 break;
             case '^' :
-                result = 1;
-                for (int i = 0; i < secondNumber; i++) {
-                    result *= firstNumber;
-                }
+                result = (int) Math.pow(firstNumber, secondNumber);
                 System.out.println("Возведение в степень: " + result);
                 break;
             default :

@@ -11,20 +11,17 @@ public class CalculatorTest {
         String question = "yes";
 
         while(question.equals("yes")) {
-            System.out.print("Введите первое число: ");
-            calculator.setFirstNumber(scanner.nextInt());
-
-            System.out.print("Введите знак математической операции: ");
-            calculator.setOperation(scanner.next().charAt(0));
-
-            System.out.print("Введите второе число: ");
-            calculator.setSecondNumber(scanner.nextInt());
-
+            System.out.print("Введите математическое выражение: ");
+            String mathematicalExpression = scanner.nextLine();
+            String[] arrayExpression = mathematicalExpression.split(" ");
+            calculator.setFirstNumber(Integer.parseInt(arrayExpression[0]));
+            calculator.setOperation(arrayExpression[1].charAt(0));
+            calculator.setSecondNumber(Integer.parseInt(arrayExpression[2]));
             calculator.calc();
 
             do {
                 System.out.print("Хотите продолжить вычисления? [yes/no]: ");
-                question = scanner.next();
+                question = scanner.nextLine();
             } while (!question.equals("yes") && !question.equals("no"));
         } 
     }
