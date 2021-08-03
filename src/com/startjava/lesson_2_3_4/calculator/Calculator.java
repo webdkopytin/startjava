@@ -19,7 +19,6 @@ public class Calculator {
     }
 
     public double calculate(String mathExpression) {
-
         String[] arrayExpression = mathExpression.split(" ");
         setFirstNumber(Integer.parseInt(arrayExpression[0]));
         setOperation(arrayExpression[1].charAt(0));
