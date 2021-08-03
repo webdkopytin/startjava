@@ -53,16 +53,16 @@ public class GuessNumber {
         printNumbers(secondPlayer);
     }
 
-    private int enterNumber(Player player) {
-        int number = new Scanner(System.in).nextInt();
-        player.setNumbers(number);
-        return number;
-    }
-
     private void generateSecretNumber() {
         secretNumber = (int) (Math.random() * 100) + 1;
         System.out.println(System.lineSeparator() + "Компьютер загадал число." + "  (число - " +
                 secretNumber + ")");
+    }
+
+    private int enterNumber(Player player) {
+        int number = new Scanner(System.in).nextInt();
+        player.setNumber(number);
+        return number;
     }
 
     private void printNumbers(Player player) {
