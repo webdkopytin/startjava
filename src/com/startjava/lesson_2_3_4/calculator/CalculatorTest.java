@@ -8,21 +8,17 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         Scanner scanner = new Scanner(System.in);
 
-        String question = "yes";
+        String answer = "yes";
 
-        while(question.equals("yes")) {
+        while (answer.equals("yes")) {
             System.out.print("Введите математическое выражение: ");
-            String mathematicalExpression = scanner.nextLine();
-            String[] arrayExpression = mathematicalExpression.split(" ");
-            calculator.setFirstNumber(Integer.parseInt(arrayExpression[0]));
-            calculator.setOperation(arrayExpression[1].charAt(0));
-            calculator.setSecondNumber(Integer.parseInt(arrayExpression[2]));
-            calculator.calc();
+            String mathExpression = scanner.nextLine();
+            System.out.println(mathExpression + " = " + calculator.calculate(mathExpression));
 
             do {
                 System.out.print("Хотите продолжить вычисления? [yes/no]: ");
-                question = scanner.nextLine();
-            } while (!question.equals("yes") && !question.equals("no"));
-        } 
+                answer = scanner.nextLine();
+            } while (!answer.equals("yes") && !answer.equals("no"));
+        }
     }
 }
